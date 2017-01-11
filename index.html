@@ -1,56 +1,44 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-    <body data-spy="scroll" data-target="#navbar" data-offset="100">
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Łukasz Stukan - Web Developer - Portfolio</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="apple-touch-icon" href="apple-touch-icon.png">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body data-spy="scroll" data-target="#navbar" data-offset="100">
     <nav class="navbar navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <a class="navbar-brand" href="#"><h1>Łukasz Stukan <span>portfolio</span> </h1></a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="#about">about me</a></li>
-              <li><a href="#projects">projects</a></li>
-              <li><a href="#contact">contact</a></li>
-            </ul>
-        </div><!--/.navbar-collapse -->
-      </div>
+        <div id="navbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#about">about me</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div><!--#navbar-->
+      </div><!--.container-->
     </nav>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <section class="jumbotron">
       <div class="container">
         <h2 id="about">About me</h2>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 clearfix">
             <h3>Profile</h3>
               <img class="me" src="img/me.png" alt="My Photo">
               <p class="about-me">
-                I am 25 years old web developer from Poland. I&nbsp;was born in Żory and currently live in Kraków where I&nbsp;graduated as Bachelor of Applied Informatics (Cracow University of Economics). I&nbsp;am working as freelancer with over 5 years expierence on various projects which consist of different technologies and requirements.
-                I&nbsp;made a&nbsp;lot of websites based on Wordpress CMS, but can adapt to other, new solutions. Currently I&nbsp;am building own web application based on Laravel 5 framework.
+                I am 25 years old web developer from Poland. I&nbsp;was born in Żory and currently live in Kraków where
+                I&nbsp;graduated as Bachelor of Applied Informatics (Cracow University of Economics). I&nbsp;am working
+                as freelancer with over 5 years expierence on various projects which consist of different technologies
+                and requirements. I&nbsp;made a&nbsp;lot of websites based on Wordpress CMS, but can adapt to other,
+                new solutions. Currently I&nbsp;am building own web application based on Laravel 5 framework.
               </p>
           </div>
           <div class="col-md-6">
@@ -74,20 +62,26 @@
                 <li>Illustrator</li>
                 <li>RWD</li>
               </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
+          </div><!--.col-md-6-->
+        </div><!--.row-->
+      </div><!--.container-->
+    </section><!--.jumbotron-->
+    <section class="container">
       <div class="row">
-        <h2 id="projects">Projects</h2>
-        <div class="col-md-4 project">
+        <div class="col-xs-12">
+          <h2 id="projects">Projects</h2>
+        </div>
+        <div class="col-sm-4 project">
           <h3>Quattro Development</h3>
-          <a href="http://quattrodevelopment.pl/"><img src="img/quattro.png" alt=""></a>
 
-          <p>Implementing layout based on Wordpress, creating canvas map for house choose(fabric.js), coding bussines logic and integration with 360 degree preview script. Adding extra features in Wordpress admin panel which supports dynamic changes for canvas map and related informations.</p>
+          <a href="http://quattrodevelopment.pl/">
+            <img class="img-responsive" src="img/quattro.png" alt="">
+          </a>
+          <p>
+            Implementing layout based on Wordpress, creating canvas map for house choose(fabric.js), coding bussines
+            logic and integration with 360 degree preview script. Adding extra features in Wordpress admin panel which
+            supports dynamic changes for canvas map and related informations.
+          </p>
           <ul>
             <li>Wordpress</li>
             <li>Fabric.js</li>
@@ -98,12 +92,16 @@
             <li>JavaScript</li>
             <li>PHP</li>
           </ul>
-        </div>
-        <div class="col-md-4 project">
+        </div><!--.project-->
+        <div class="col-sm-4 project">
           <h3>Hoste</h3>
-          <a href="https://www.hoste.pl/"><img src="img/hoste.png" alt=""></a>
-
-          <p>Implementing(coding) new layout based on CakePHP, adding new features to back-end, fixing front-end and back-end issues of previous website version.</p>
+          <a href="https://www.hoste.pl/">
+            <img class="img-responsive" src="img/hoste.png" alt="">
+          </a>
+          <p>
+            Implementing(coding) new layout based on CakePHP, adding new features to back-end, fixing front-end
+            and back-end issues of previous website version.
+          </p>
           <ul>
             <li>CakePHP</li>
             <li>jQuery</li>
@@ -112,12 +110,16 @@
             <li>JavaScript</li>
             <li>PHP</li>
           </ul>
-       </div>
-        <div class="col-md-4 project">
+       </div><!--.project-->
+        <div class="col-sm-4 project">
           <h3>RehConcept</h3>
-          <a href="http://www.rehconcept.pl/"><img src="img/rehconcept.png" alt=""></a>
-
-          <p>Designing website, then coding layout with integration to Wordpress CMS and external API. Customizing admin panel for easier maintain.</p>
+          <a href="http://www.rehconcept.pl/">
+            <img class="img-responsive" src="img/rehconcept.png" alt="">
+          </a>
+          <p>
+            Designing website, then coding layout with integration to Wordpress CMS and external API. Customizing
+            admin panel for easier maintain.
+          </p>
           <ul>
             <li>Wordpress</li>
             <li>Bootstrap 3</li>
@@ -129,14 +131,18 @@
             <li>Illustrator</li>
             <li>Photoshop</li>
           </ul>
-        </div>
-      </div>
+        </div><!--.project-->
+      </div><!--.row-->
       <div class="row">
-        <div class="col-md-4 project">
+        <div class="col-sm-4 project">
           <h3>My Holly World</h3>
-          <a href="http://www.myhollyworld.pl/"><img src="img/myhollyworld.png" alt=""></a>
-
-          <p>Designing logo, structure and responsive layout of the blog. Coding on Wordpress, integrating with google analytics and SEO plugins.</p>
+          <a href="http://www.myhollyworld.pl/">
+            <img class="img-responsive" src="img/myhollyworld.png" alt="">
+          </a>
+          <p>
+            Designing logo, structure and responsive layout of the blog. Coding on Wordpress, integrating with
+            google analytics and SEO plugins.
+          </p>
           <ul>
             <li>Wordpress</li>
             <li>Bootstrap 3</li>
@@ -148,12 +154,16 @@
             <li>Illustrator</li>
             <li>Photoshop</li>
           </ul>
-        </div>
-        <div class="col-md-4 project">
+        </div><!--.project-->
+        <div class="col-sm-4 project">
           <h3>Profaea</h3>
-          <a href="http://profaea.pl/"><img src="img/profaea.png" alt=""></a>
-
-          <p>Implementing layout on Wordpress with responsive design, customizing admin panel for dynamic changes on the pages.</p>
+          <a href="http://profaea.pl/">
+            <img class="img-responsive" src="img/profaea.png" alt="">
+          </a>
+          <p>
+            Implementing layout on Wordpress with responsive design, customizing admin panel for dynamic
+            changes on the pages.
+          </p>
           <ul>
             <li>Wordpress</li>
             <li>Bootstrap 3</li>
@@ -163,12 +173,16 @@
             <li>JavaScript</li>
             <li>PHP</li>
           </ul>
-       </div>
-        <div class="col-md-4 project">
+       </div><!--.project-->
+        <div class="col-sm-4 project">
           <h3>Poligraf</h3>
-          <a href="http://www.papierdoplotera.com/"><img src="img/papierdoplotera.png" alt=""></a>
-
-          <p>Creating logo and responsive layout, implementing on Wordpress with custom plugin changes, which matched client requirements.</p>
+          <a href="http://www.papierdoplotera.com/">
+            <img class="img-responsive" src="img/papierdoplotera.png" alt="">
+          </a>
+          <p>
+            Creating logo and responsive layout, implementing on Wordpress with custom plugin changes,
+            which matched client requirements.
+          </p>
           <ul>
             <li>Wordpress</li>
             <li>Bootstrap 3</li>
@@ -180,58 +194,48 @@
             <li>Illustrator</li>
             <li>Photoshop</li>
           </ul>
-        </div>
-      </div>
-      <hr>
+        </div><!--.project-->
+      </div><!--.row-->
+    </section><!--.container-->
+    <hr>
+    <section class="container">
       <div class="jumbotron contact">
-        <div class="container">
           <h2 id="contact">Contact me</h2>
           <div class="row">
             <div class="col-md-5">
               <h3>Here is my e-mail</h3>
-                <img class="me" style="float: none" src="img/me.png" alt="">
-                <p>
-                  stukan.lukasz@gmail.com
-                </p>
-            </div>
+              <img class="me" style="float: none" src="img/me.png" alt="">
+              <p>stukan.lukasz@gmail.com</p>
+            </div><!--.col-md-5-->
             <div class="col-md-7">
               <h3>or send me message by web form</h3>
               <form>
                 <div class="form-group">
                   <label for="inputName">Your name</label>
                   <input type="email" class="form-control" id="inputName" placeholder="Samuel L. Jackson">
-                </div>
-              <div class="form-group">
-                <label for="inputEmail">Your email address</label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="sam.l@gmail.com">
-              </div>
-              <div class="form-group">
-                <label for="inputMessage">Your message</label>
-                <textarea class="form-control" id="inputMessage" rows="3" placeholder="I don't like snakes in the plane.."></textarea>
-              </div>
-              <button type="submit" class="btn">Send message</button>
+                </div><!--.form-group-->
+                <div class="form-group">
+                  <label for="inputEmail">Your email address</label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="sam.l@gmail.com">
+                </div><!--.form-group-->
+                <div class="form-group">
+                  <label for="inputMessage">Your message</label>
+                  <textarea class="form-control" id="inputMessage" rows="3" placeholder="I don't like snakes in the plane.."></textarea>
+                </div><!--.form-group-->
+                <button type="submit" class="btn">Send message</button>
               </form>
-            </div>
-          </div>
-
-          <!-- <h3>Technologies</h3>
-          <ul>
-            <li>HTML 5</li>
-            <li>HTML 5</li>
-            <li>HTML 5</li>
-            <li>HTML 5</li>
-          </ul> -->
-        </div>
+            </div><!--.col-md-7-->
+          </div><!--.row-->
+        </div><!--.contact-->
+      </section><!--.container-->
+      <div class="container">
+        <footer>
+          <p>Łukasz Stukan &copy; 2017</p>
+        </footer>
       </div>
-      <footer>
-        <p>Łukasz Stukan &copy; 2017</p>
-      </footer>
-    </div> <!-- /container -->
-
-        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
-        <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> -->
-        <script src="js/vendor/jquery-1.11.2.min.js"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
