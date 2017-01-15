@@ -10,6 +10,7 @@
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/bootstrap-theme.min.css">
       <link rel="stylesheet" href="css/main.css">
+      <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   <body data-spy="scroll" data-target="#navbar" data-offset="100">
     <nav class="navbar navbar-fixed-top" role="navigation">
@@ -214,19 +215,20 @@
             </div><!--.col-md-5-->
             <div class="col-md-7">
               <h3>or send me message by web form</h3>
-              <form>
+              <form action="mailer.php" method="POST">
                 <div class="form-group">
                   <label for="inputName">Your name</label>
-                  <input type="email" class="form-control" id="inputName" placeholder="Samuel L. Jackson">
+                  <input type="text" class="form-control" id="inputName" name="name" placeholder="Samuel L. Jackson">
                 </div><!--.form-group-->
                 <div class="form-group">
                   <label for="inputEmail">Your email address</label>
-                  <input type="email" class="form-control" id="inputEmail" placeholder="sam.l@gmail.com">
+                  <input type="email" class="form-control" id="inputEmail" name="email" placeholder="sam.l@gmail.com">
                 </div><!--.form-group-->
                 <div class="form-group">
                   <label for="inputMessage">Your message</label>
-                  <textarea class="form-control" id="inputMessage" rows="3" placeholder="I don't like snakes in the plane.."></textarea>
+                  <textarea class="form-control" id="inputMessage" rows="3" name="message" placeholder="I don't like snakes in the plane.."></textarea>
                 </div><!--.form-group-->
+                <div class="g-recaptcha" data-sitekey="6Let1xEUAAAAAOGcOIxcZLmPJDH6le-CF8MBFpje"></div>
                 <button type="submit" class="btn">Send message</button>
               </form>
             </div><!--.col-md-7-->
