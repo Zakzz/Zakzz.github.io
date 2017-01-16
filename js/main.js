@@ -10,15 +10,16 @@ $contactForm.submit(function(e) {
   		data: $(this).serialize(),
   		dataType: 'json',
   		beforeSend: function() {
-  			$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+  			$contactForm.append('');
+        $('<span class="glyphicon glyphicon-send" aria-hidden="true"></span>').appendTo(contactForm);
   		},
   		success: function(data) {
   			$contactForm.find('.alert--loading').hide();
-  			$contactForm.append('<div class="alert alert--success">Message sent!</div>');
+        $('<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>').appendTo(contactForm);
   		},
   		error: function(err) {
   			$contactForm.find('.alert--loading').hide();
-  			$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+        $('<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>').appendTo(contactForm);
   		}
   	});
   });
