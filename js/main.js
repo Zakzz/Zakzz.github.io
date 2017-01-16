@@ -1,13 +1,27 @@
 $(document).ready(function(){
 
-$('form').on('click', function(){
-  $.ajax({
-      url: "https://formspree.io/stukan.lukasz@gmail.com",
-      method: "POST",
-      data: {message: "hello!"},
-      dataType: "json"
+var $contactForm = $('form');
+
+$contactForm.submit(function(e) {
+  	e.preventDefault();
+  	$.ajax({
+  		url: '//formspree.io/stukan.lukasz@gmail.com',
+  		method: 'POST',
+  		data: $(this).serialize(),
+  		dataType: 'json',
+  		beforeSend: function() {
+  			$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+  		},
+  		success: function(data) {
+  			$contactForm.find('.alert--loading').hide();
+  			$contactForm.append('<div class="alert alert--success">Message sent!</div>');
+  		},
+  		error: function(err) {
+  			$contactForm.find('.alert--loading').hide();
+  			$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+  		}
+  	});
   });
-});
 
   $("#navbar ul li a[href^='#']").on('click', function(e) {
      // prevent default anchor click behavior
