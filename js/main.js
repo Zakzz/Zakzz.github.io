@@ -1,12 +1,13 @@
 $(document).ready(function(){
 
+$('form').on('click', function(){
   $.ajax({
-      url: "https://formspree.io/stukan.lukasz@gmail.com", 
+      url: "https://formspree.io/stukan.lukasz@gmail.com",
       method: "POST",
       data: {message: "hello!"},
       dataType: "json"
   });
-
+});
 
   $("#navbar ul li a[href^='#']").on('click', function(e) {
      // prevent default anchor click behavior
