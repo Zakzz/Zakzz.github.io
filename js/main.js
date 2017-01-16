@@ -11,15 +11,15 @@ $contactForm.submit(function(e) {
   		dataType: 'json',
   		beforeSend: function() {
   			$contactForm.append('');
-        $('<span class="glyphicon glyphicon-send" aria-hidden="true"></span>').appendTo(contactForm);
+        $('<span class="glyphicon glyphicon-send" aria-hidden="true"></span>').appendTo($contactForm);
   		},
   		success: function(data) {
   			$contactForm.find('.alert--loading').hide();
-        $('<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>').appendTo(contactForm);
+        $('<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>').appendTo($contactForm);
   		},
   		error: function(err) {
   			$contactForm.find('.alert--loading').hide();
-        $('<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>').appendTo(contactForm);
+        $('<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>').appendTo($contactForm);
   		}
   	});
   });
