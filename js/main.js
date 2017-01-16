@@ -10,15 +10,15 @@ $contactForm.submit(function(e) {
   		data: $(this).serialize(),
   		dataType: 'json',
   		beforeSend: function() {
-  			$contactForm.append('');
-        $('<span class="glyphicon glyphicon-send" aria-hidden="true"></span>').appendTo($contactForm);
+        $('form .btn').css('margin-left', '56px');
+        $('<span class="glyphicon glyphicon-send alert--sending" aria-hidden="true"></span>').appendTo($contactForm);
   		},
   		success: function(data) {
-  			$contactForm.find('.alert--loading').hide();
+  			$contactForm.find('.alert--sending').hide();
         $('<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>').appendTo($contactForm);
   		},
   		error: function(err) {
-  			$contactForm.find('.alert--loading').hide();
+  			$contactForm.find('.alert--sending').hide();
         $('<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>').appendTo($contactForm);
   		}
   	});

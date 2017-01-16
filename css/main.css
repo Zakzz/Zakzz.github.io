@@ -111,7 +111,6 @@ ul.skills li{
   margin: 3px;
 }
 
-
 .contact.jumbotron{
     border-radius: 0;
 }
@@ -149,6 +148,15 @@ ul.skills li{
   font-size: 26px;
   top: 10px;
   left: 15px;
+}
+span.glyphicon.glyphicon-ok {
+    color: #49a068;
+}
+span.glyphicon.glyphicon-send {
+    color: #4987a0;
+}
+span.glyphicon.glyphicon-error {
+    color: #a04949;
 }
 @media(max-width:992px){
   h3{
