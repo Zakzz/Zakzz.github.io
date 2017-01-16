@@ -16,6 +16,7 @@ $contactForm.submit(function(e) {
   		success: function(data) {
   			$contactForm.find('.alert--sending').hide();
         $('<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>').appendTo($contactForm);
+        $($contactForm)[0].reset();
   		},
   		error: function(err) {
   			$contactForm.find('.alert--sending').hide();
