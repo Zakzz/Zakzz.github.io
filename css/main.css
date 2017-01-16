@@ -122,6 +122,9 @@ ul.skills li{
 .contact p{
   text-align: center;
 }
+.contact .raw-email{
+  font-size: 20px;
+}
 .contact form{
   text-align: center;
 }
